@@ -20,19 +20,19 @@
         <div class="container">
             <ul class="nav nav-tabs justify-content-end">
               <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a {% if file == 'home' %}class="nav-link active" aria-current="page"{% else %}class="nav-link"{% endif %} href="/">Home</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="/aboutme.html">About me</a>
+                  <a {% if file == 'about' %}class="nav-link active" aria-current="page"{% else %}class="nav-link"{% endif %} href="/about">About me</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="/skills.html">Skills</a>
+                  <a {% if file == 'skills' %}class="nav-link active" aria-current="page"{% else %}class="nav-link"{% endif %} href="/skills">Skills</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="/portfolio.html">Portfolio</a>
+                  <a {% if file == 'portfolio' %}class="nav-link active" aria-current="page"{% else %}class="nav-link"{% endif %} href="/portfolio">Portfolio</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="/contact.html">Contact me</a>
+                  <a {% if file == 'contact' %}class="nav-link active" aria-current="page"{% else %}class="nav-link"{% endif %} href="/contact">Contact me</a>
               </li>
             </ul>
         </div>
